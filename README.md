@@ -43,7 +43,9 @@ Go to groups.google.com and create a group.
 
 6. Add your service accounts to a Google group.
 You can add service accounts to a group manually or in bulk.
+.  
 MANUAL: From groups.google.com choose the group you want to use. Choose ‘Manage Members’ on the right, then choose ‘Direct add members’ on the left. Enter the service account email addresses you wish to add.
+.  
 BULK: Go to this link https://admin.google.com/ac/groups . Choose your group name. Click the Members section. Hover over the yellow + sign and choose Bulk Add. The pop up will explain how to download a csv template to add your service account IDs and then re-upload the csv to the group.
 
 7. Add the google group to your source and destination Team Drives and/or My Drive folders.
