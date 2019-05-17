@@ -1,6 +1,10 @@
 # sa-guide : Guide to creating service accounts and using them with rclone copy/sync
 
+Multiple service accounts (SAs) along with a rotation script such as sasync can be useful when you need to sync or copy large amounts of data up to or between google drive accounts. The daily limit for uploads using a single gsuite account is 750GB. Each service account has its own quota. So 10 service accounts will have a combined upload quota of 7.5TB (10 x 750GB). Below is a guide and some tools to help you get it all working.
+
 [1. Setup - This guide](https://github.com/88lex/sa-guide)
+
+Tools:
 
 [2. sa-gen - Creating Service Accounts](https://github.com/88lex/sa-gen)
 
@@ -11,9 +15,13 @@
 [5. cleanremotes - Clean rclone remotes](https://github.com/88lex/cleanremotes)
 
 **************
-**NOTE:** If you want to use [sa-gen](https://github.com/88lex/sa-gen) and [sasync](https://github.com/88lex/sasync) please take the time to read the document below along with instructions that we've written for (some of) the repos. Also read through the scripts a couple of times. I wanted to share this but I don't have a lot of time for support. It would be great if those of you who become early users can try to help others on discord/slack channels. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
+**NOTE:** If you want to use [sa-gen](https://github.com/88lex/sa-gen) and [sasync](https://github.com/88lex/sasync) please take the time to read the document below along with readme instructions that we've written for the repos. Also read through the scripts a couple of times. The scripts are all pretty straightforward. 
+
+The scripts and methods are based on ideas/contributions/tools from ncw, zenjabba, max, sk, rxwatcher, dashlt, mc2squared, storm, physk and others.
+
+I wanted to share this but I don't have a lot of time for support. If you can try to help others on discord/slack channels after figuring out the steps that would be great. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
 ********
-Multiple service accounts (SAs) along with a rotation script such as sasync can be useful when you need to sync or copy large amounts of data up to or between google drive accounts. The daily limit for uploads using a single gsuite account is 750GB. Each service account has its own quota. So 10 service accounts will have a combined upload quota of 7.5TB (10 x 750GB).
+
 
 1. Create one or more Google Projects. You need projects to create service accounts.
 Each project can have up to 100 service accounts. Each service account has a quota of 750GB upload/day and 10TB download/day. Instructions to create a project are here:  https://cloud.google.com/resource-manager/docs/creating-managing-projects
