@@ -52,9 +52,6 @@ https://github.com/88lex/sa-gen
 These are the originals:  
 https://gist.github.com/DashLt/4c6ff6e9bde4e9bc4a9ed7066c4efba4  
 https://gist.github.com/mc2squared/01c933a8172a26af88285610a0e5af8d  
-This is a Python script from zenjabba with instructions from Max:  
-https://docs.google.com/document/d/1I3s53eC3cl3u6xBHvoW9cKbxoYowZU0JwavCFl-bSY0/edit?usp=sharing  
-(if the repo linked in the instructions above is not available you can use this repo instead https://github.com/88lex/create_service_accounts-master )
 
 5. Create a Google Group.
 Go to groups.google.com and create a group.
