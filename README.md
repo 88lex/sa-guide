@@ -1,4 +1,14 @@
-# sa-guide : Setting up multiple service accounts (SAs) and server-side sync
+# sa-guide : Guide to creating service accounts and using them with rclone copy/sync
+
+[1. Setup - This guide](https://gitlab.com/88lex/sa-guide/edit/master/README.md)
+
+[2. sa-gen](https://github.com/88lex/sa-gen)
+
+[3. sasync](https://github.com/88lex/sasync)
+
+[4. Check rclone mounts](https://github.com/88lex/checkrcmount)
+
+[5. Clean rclone remotes](https://github.com/88lex/cleanremotes)
 
 **************
 **NOTE:** If you want to use [sa-gen](https://github.com/88lex/sa-gen) and [sasync](https://github.com/88lex/sasync) please take the time to read the document below along with instructions that we've written for (some of) the repos. Also read through the scripts a couple of times. I wanted to share this but I don't have a lot of time for support. It would be great if those of you who become early users can try to help others on discord/slack channels. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
