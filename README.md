@@ -17,9 +17,9 @@ Tools:
 **************
 **NOTE:** If you want to use [sa-gen](https://github.com/88lex/sa-gen) and [sasync](https://github.com/88lex/sasync) please take the time to read the document below along with readme instructions that we've written for the repos. Also read through the scripts a couple of times. The scripts are all pretty straightforward. 
 
-The scripts and methods are based on ideas/contributions/tools from ncw, zenjabba, max, sk, rxwatcher, dashlt, mc2squared, storm, physk and others.
+The scripts and methods are based on ideas/code/tools from ncw, max, sk, rxwatcher, l3uddz, zenjabba, dashlt, mc2squared, storm, physk and others. If I forgot anyone no offense intended. Ping me and I'll add you.
 
-I wanted to share this but I don't have a lot of time for support. If you can try to help others on discord/slack channels after figuring out the steps that would be great. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
+I wanted to share this but I don't have a lot of time for support. If you can try to help others on discord/slack channels after figuring out the steps that would be great. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting variables and permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
 ********
 
 
@@ -62,12 +62,15 @@ You can add service accounts to a group manually or in bulk.
 MANUAL: From groups.google.com choose the group you want to use. Choose ‘Manage Members’ on the right, then choose ‘Direct add members’ on the left. Enter the service account email addresses you wish to add.
 .  
 BULK: Go to this link https://admin.google.com/ac/groups . Choose your group name. Click the Members section. Hover over the yellow + sign and choose Bulk Add. The pop up will explain how to download a csv template to add your service account IDs and then re-upload the csv to the group.
+[ Find cli command to simplify? GAM will do but requires install. ]
 
 7. Add the google group to your source and destination Team Drives and/or My Drive folders.
+. 
 Team Drives: Right click the Team Drive, choose Add Members and add the Group email. Give Manager or Content Manager permission to the Group.
+. 
 My Drive: Right click the folder in My Drive, click Share then add the Group email.
 
 8. Configure sasync or other script to copy/sync files to shared TDs/folders using your service accounts.
 Sasync:  https://github.com/88lex/sasync
-Instructions in the Readme on github.
+sasync instructions are in the Readme.md on github.
 
