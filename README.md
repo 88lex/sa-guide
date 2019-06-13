@@ -14,6 +14,10 @@ Tools:
 
 [5. cleanremotes - Clean rclone remotes](https://github.com/88lex/cleanremotes)
 
+[5. mountsize - Clean rclone remotes](https://github.com/88lex/mountsize)
+
+[5. diffmove and difflist - Clean rclone remotes](https://github.com/88lex/diffmove)
+
 **************
 **NOTE:** If you want to use [sa-gen](https://github.com/88lex/sa-gen) and [sasync](https://github.com/88lex/sasync) please take the time to read the document below along with readme instructions that we've written for the repos. Also read through the scripts a couple of times. The scripts are all pretty straightforward. 
 
