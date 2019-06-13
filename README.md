@@ -27,7 +27,10 @@ The scripts and methods are based on ideas/code/tools from ncw, max, sk, rxwatch
 I wanted to share this but I don't have a lot of time for support. If you can try to help others on discord/slack channels after figuring out the steps that would be great. All of the scripts do work, but require some very basic knowledge for running bash scripts, setting variables and permissions (e.g. chmod +x to run scripts in bash) and ensuring that your scripts are pointing to files/folders in the correct locations (e.g. /opt/sa for json keys, /opt/sasync/json.count for the sasync counter, etc.).
 ********
 
+1. **NOTE: Items 1-4 below have been deprecated.** The new sa-gen will do all of these tasks via 
+a script that uses gcloud sdk commands. 
 
+***** **SKIP TO NUMBER 5** *****
 1. Create one or more Google Projects. You need projects to create service accounts.
 Each project can have up to 100 service accounts. Each service account has a quota of 750GB upload/day and 10TB download/day. Instructions to create a project are here:  https://cloud.google.com/resource-manager/docs/creating-managing-projects
 You can name the project as you like. A simple description is often best. For example we use “sasync01”, “sasync02” and so on which reminds us that the project is being used for service account syncing.
