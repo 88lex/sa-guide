@@ -1,4 +1,4 @@
-# sa-guide : Guide to creating service accounts and using them with rclone copy/sync
+Instructions to help you to create service accounts and use them with rclone copy/sync and team drives
 
 Multiple service accounts (SAs) along with a rotation script such as sasync can be useful when you need to sync or copy large amounts of data up to or between google drive accounts. The daily limit for uploads using a single gsuite account is 750GB. Each service account has its own quota. So 10 service accounts will have a combined upload quota of 7.5TB (10 x 750GB). Below is a guide and some tools to help you get it all working.
 
