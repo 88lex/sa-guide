@@ -8,6 +8,8 @@ Tools:
 
 [2. sa-gen - Creating Service Accounts](https://github.com/88lex/sa-gen)
 
+[  - MANUAL DIAGNOSTIC FOR CHECKING PERMISSIONS ON A RCLONE REMOTE ](https://gitlab.com/88lex/sa-guide/-/blob/master/rclone_remote_permissions.md#manual-diagnostic-for-checking-permissions-on-a-rclone-remote)
+
 [3. sasync - Creating and running rclone sync with sets](https://github.com/88lex/sasync)
 
 [4. checkrcmount - Check rclone remotes are accessible ](https://github.com/88lex/checkrcmount)
